@@ -1,0 +1,250 @@
+python
+java
+c language
+c++
+c#
+go
+golang
+rust
+javascript
+typescript
+kotlin
+swift
+php
+ruby
+r programming
+matlab
+scala
+dart
+groovy
+bash
+powershell
+shell scripting
+objective-c
+assembly
+fortran
+visual basic
+
+html
+css
+sass
+less
+javascript
+typescript
+react
+angular
+vue
+nextjs
+nuxtjs
+redux
+bootstrap
+tailwind css
+material ui
+chakra ui
+jquery
+webpack
+vite
+babel
+responsive design
+ui/ux
+figma
+adobe xd
+
+nodejs
+express
+flask
+django
+fastapi
+spring
+spring boot
+asp.net
+laravel
+ruby on rails
+rest api
+graphql
+microservices
+authentication
+jwt
+oauth
+api development
+server-side rendering
+
+
+aws
+amazon web services
+azure
+google cloud
+gcp
+cloud computing
+ec2
+s3
+lambda
+rds
+cloud formation
+cloudwatch
+iam
+vpc
+azure devops
+firebase
+serverless
+cloud security
+
+git
+github
+gitlab
+bitbucket
+docker
+kubernetes
+jenkins
+ci/cd
+terraform
+ansible
+linux
+unix
+nginx
+apache
+monitoring
+prometheus
+grafana
+
+machine learning
+deep learning
+nlp
+computer vision
+reinforcement learning
+supervised learning
+unsupervised learning
+classification
+regression
+clustering
+scikit-learn
+tensorflow
+pytorch
+keras
+xgboost
+lightgbm
+feature engineering
+model evaluation
+model deployment
+hyperparameter tuning
+
+data analysis
+data science
+data visualization
+statistics
+probability
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+excel
+power bi
+tableau
+business intelligence
+data cleaning
+data wrangling
+data mining
+big data
+predictive modeling
+
+hadoop
+spark
+kafka
+hive
+airflow
+etl
+data pipelines
+data warehousing
+snowflake
+redshift
+data lakes
+
+hadoop
+spark
+kafka
+hive
+airflow
+etl
+data pipelines
+data warehousing
+snowflake
+redshift
+data lakes
+
+hadoop
+spark
+kafka
+hive
+airflow
+etl
+data pipelines
+data warehousing
+snowflake
+redshift
+data lakes
+
+cybersecurity
+network security
+ethical hacking
+penetration testing
+cryptography
+firewall
+siem
+vulnerability assessment
+risk management
+incident response
+identity management
+
+android
+ios
+flutter
+react native
+swift
+kotlin
+xamarin
+mobile app development
+
+unit testing
+integration testing
+test automation
+selenium
+junit
+pytest
+postman
+cypress
+quality assurance
+manual testing
+
+data structures
+algorithms
+object oriented programming
+design patterns
+system design
+multithreading
+concurrency
+operating systems
+computer networks
+distributed systems
+software architecture
+
+generative ai
+llm
+transformers
+huggingface
+prompt engineering
+chatgpt api
+langchain
+computer graphics
+blockchain
+web3
+smart contracts
+solidity
+
+agile
+scrum
+kanban
+jira
+project management
+stakeholder management
+requirement analysis

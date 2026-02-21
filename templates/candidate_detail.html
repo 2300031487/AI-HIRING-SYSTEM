@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="dashboard-container">
+    <div class="dashboard-card">
+
+        <h3 class="mb-4">Candidate Detail</h3>
+
+        <p><strong>Name:</strong> {{ candidate.name }}</p>
+        <p><strong>Email:</strong> {{ candidate.email }}</p>
+
+        <hr>
+
+        <h5>Matched Skills</h5>
+        {% for skill in candidate.matched_skills %}
+            <span class="skill-badge matched">{{ skill }}</span>
+        {% endfor %}
+
+        <h5 class="mt-4">Missing JD Skills</h5>
+        {% for skill in candidate.missing_skills %}
+            <span class="skill-badge missing">{{ skill }}</span>
+        {% endfor %}
+
+        <h5 class="mt-4">All Resume Skills</h5>
+        {% for skill in candidate.resume_skills %}
+            <span class="skill-badge resume">{{ skill }}</span>
+        {% endfor %}
+
+        <h5 class="mt-4">All JD Skills</h5>
+        {% for skill in candidate.jd_skills %}
+            <span class="skill-badge jd">{{ skill }}</span>
+        {% endfor %}
+
+        <div class="mt-4 text-center">
+            <a href="/dashboard" class="btn btn-outline-light">
+                Back to Dashboard
+            </a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

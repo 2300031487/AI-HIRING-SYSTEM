@@ -1,0 +1,10 @@
+Role: Backend Developer
+
+Must Have:
+python
+sql
+postgresql
+
+Good To Have:
+aws
+machine learning

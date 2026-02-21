@@ -1,0 +1,74 @@
+python
+java
+c language
+c++
+javascript
+html
+c#
+css
+sql
+r programming
+php
+react
+angular
+vue
+nodejs
+express
+flask
+django
+spring boot
+bootstrap
+jquery
+rest api
+responsive design
+mysql
+postgresql
+mongodb
+sqlite
+firebase
+database design
+git
+github
+docker
+linux
+aws
+azure
+data analysis
+data science
+excel
+power bi
+tableau
+pandas
+numpy
+matplotlib
+seaborn
+statistics
+data visualization
+machine learning
+deep learning
+nlp
+scikit-learn
+tensorflow
+pytorch
+data preprocessing
+model training
+feature engineering
+data structures
+algorithms
+object oriented programming
+operating systems
+computer networks
+system design
+unit testing
+integration testing
+postman
+selenium
+debugging
+problem solving
+communication
+teamwork
+leadership
+time management
+agile
+scrum
+project management

@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* HERO SECTION */
+.hero-section {
+    padding: 120px 20px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* GLASS CARD */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    max-width: 600px;
+    margin: auto;
+    color: white;
+}
+
+/* BUTTON */
+.btn-gradient {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.05);
+}
+
+/* DASHBOARD */
+.dashboard-container {
+    padding: 80px 20px;
+}
+
+.dashboard-card {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    color: white;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* PROGRESS BAR */
+.modern-progress {
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* STATUS BADGE */
+.status-badge {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.status-badge.success {
+    background: #00c853;
+    color: white;
+}
+
+.status-badge.fail {
+    background: #ff1744;
+    color: white;
+}
+
+.btn-glass {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+}
+
+.btn-gradient {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+}
+.skill-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.resume-skill {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.jd-skill {
+    background: linear-gradient(45deg, #f7971e, #ffd200);
+    color: black;
+}
+
+.candidate-link {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.matched {
+    background: #28a745;
+    color: white;
+}
+
+.missing {
+    background: #dc3545;
+    color: white;
+}
+
+.resume {
+    background: #007bff;
+    color: white;
+}
+
+.jd {
+    background: #ffc107;
+    color: black;
+}

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="dashboard-container">
+
+    <div class="dashboard-card">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3>Candidate Evaluation</h3>
+
+            {% if shortlisted %}
+                <span class="status-badge success">Shortlisted</span>
+            {% else %}
+                <span class="status-badge fail">Not Shortlisted</span>
+            {% endif %}
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <p><strong>Name:</strong> {{ name }}</p>
+                <p><strong>Email:</strong> {{ email }}</p>
+            </div>
+        </div>
+
+        <hr>
+        <hr>
+
+<h5 class="mt-4">Resume Skills</h5>
+    <div class="skill-container">
+    {% if resume_skills %}
+        {% for skill in resume_skills %}
+            <span class="skill-badge resume-skill">{{ skill }}</span>
+        {% endfor %}
+    {% else %}
+        <p>No skills detected.</p>
+    {% endif %}
+    </div>
+
+<h5 class="mt-4">JD Required Skills</h5>
+    <div class="skill-container">
+    {% if jd_skills %}
+        {% for skill in jd_skills %}
+            <span class="skill-badge jd-skill">{{ skill }}</span>
+        {% endfor %}
+    {% else %}
+        <p>No JD skills detected.</p>
+    {% endif %}
+    </div>
+
+<hr>
+        <h5>Skill Match</h5>
+        <div class="progress modern-progress">
+            <div class="progress-bar bg-primary"
+                 style="width: {{ skill_score }}%">
+                {{ skill_score }}%
+            </div>
+        </div>
+
+        <h5 class="mt-4">Semantic Match</h5>
+        <div class="progress modern-progress">
+            <div class="progress-bar bg-warning text-dark"
+                 style="width: {{ semantic_score }}%">
+                {{ semantic_score }}%
+            </div>
+        </div>
+
+        <h5 class="mt-4">Final Score</h5>
+        <div class="progress modern-progress">
+            <div class="progress-bar bg-success"
+                 style="width: {{ final_score }}%">
+                {{ final_score }}%
+            </div>
+        </div>
+
+        <div class="mt-5 text-center">
+
+    <a href="/" class="btn btn-glass me-3">
+    Analyze Another Resume
+</a>
+
+<a href="/dashboard" class="btn btn-gradient">
+    View Ranking Dashboard
+</a>
+
+</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="dashboard-container">
+    <div class="dashboard-card">
+
+        <h3 class="mb-4">Candidate Ranking Dashboard</h3>
+
+        {% if candidates %}
+
+        <table class="table table-borderless table-hover text-white">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Skill %</th>
+                    <th>Semantic %</th>
+                    <th>Final %</th>
+                    <th>Status</th>
+                    <th>Interview %</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for c in candidates %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+
+                    <td>
+                        <a href="/candidate/{{ c.email }}" class="candidate-link">
+                            {{ c.name }}
+                        </a>
+                    </td>
+
+                    <td>{{ "%.2f"|format(c.skill_score) }}</td>
+                    <td>{{ "%.2f"|format(c.semantic_score) }}</td>
+                    <td><strong>{{ "%.2f"|format(c.final_score) }}</strong></td>
+
+                    <td>
+                        {% if c.shortlisted %}
+                            <span class="badge bg-success">Shortlisted</span>
+                        {% else %}
+                            <span class="badge bg-danger">Rejected</span>
+                        {% endif %}
+                    </td>
+
+                    <td>
+                        {% if c.interview_completed %}
+                            <span class="fw-bold text-info">
+                                {{ "%.2f"|format(c.interview_score) }}
+                            </span>
+                        {% else %}
+                            -
+                        {% endif %}
+                    </td>
+
+                    <td>
+                        <div class="d-flex gap-2">
+
+                            <form action="/delete/{{ c.id }}" method="POST"
+                                  onsubmit="return confirm('Are you sure?');">
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    Delete
+                                </button>
+                            </form>
+
+                            {% if c.shortlisted and not c.interview_completed %}
+                                <a href="/interview/{{ c.id }}"
+                                   class="btn btn-success btn-sm">
+                                    Interview
+                                </a>
+                            {% elif c.interview_completed %}
+                                <span class="badge bg-info">
+                                    Done
+                                </span>
+                            {% endif %}
+
+                        </div>
+                    </td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% else %}
+            <p>No candidates analyzed yet.</p>
+        {% endif %}
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-outline-light">Analyze More</a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

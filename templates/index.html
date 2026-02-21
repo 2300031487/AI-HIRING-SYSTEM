@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero-section">
+    <div class="container text-center text-white">
+        <h1 class="hero-title">AI-Powered Resume Screening</h1>
+        <p class="hero-subtitle">
+            Intelligent candidate analysis using NLP & Semantic Matching
+        </p>
+
+        <div class="glass-card mt-5">
+            <form action="/analyze" method="POST" enctype="multipart/form-data">
+
+                <div class="mb-3 text-start">
+                    <label class="form-label">Upload Resume (PDF)</label>
+                        <input type="file"
+                        class="form-control"
+                        name="resumes"
+                        multiple
+                        accept=".pdf"
+                        required>
+                </div>
+
+                <div class="mb-3 text-start">
+                    <label class="form-label">Paste Job Description</label>
+                    <textarea class="form-control" name="jd" rows="5" required></textarea>
+                </div>
+
+                <button class="btn btn-gradient w-100">Analyze Candidate</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

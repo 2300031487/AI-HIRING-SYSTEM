@@ -1,0 +1,11 @@
+{
+  "python": ["python", "python programming"],
+  "java": ["java", "core java"],
+  "aws": ["aws", "amazon web services"],
+  "machine learning": ["ml", "machine learning"],
+  "deep learning": ["dl", "deep learning"],
+  "nodejs": ["nodejs", "node.js"],
+  "machine learning": ["machine learning", "ml"],
+  "deep learning": ["deep learning", "dl"],
+  "rest api": ["rest api", "restful api"]
+}
